@@ -4,9 +4,9 @@
 
 A local-first game development workflow for Codex, Claude Code, and compatible Skill hosts. Continue from existing goals and project records, connecting design, implementation, assets, verification, and closure to their actual sources.
 
-The maintained public repository is [immortalbeating/gamecaden](https://github.com/immortalbeating/gamecaden). The current version is **0.3.1**; previously published tags and releases retain their original contents. The former address remains a GitHub compatibility redirect.
+The maintained public repository is [immortalbeating/gamecaden](https://github.com/immortalbeating/gamecaden). The current version is **0.3.2**; previously published tags and releases retain their original contents. The former address remains a GitHub compatibility redirect.
 
-0.3.1 fixes located source reads/updates, raw command-capture handling, Windows deep-path probes and large-source governance. Panel refresh reuses checked source models, and warm pending-operation queries avoid repeatedly decoding settled receipts. It retains the asset storage, gameplay-data and UI family conventions introduced in 0.3.0, eight responsibilities, existing Task fields and schema v1. See the [changelog](CHANGELOG.md).
+0.3.2 clarifies batch-retention dispositions and actual restore readers, focused verification and reusable observations, long-job readiness and cancellation, and package updates versus project adoption. It retains the source I/O and panel fixes from 0.3.1, eight responsibilities, existing Task fields and schema v1. See the [changelog](CHANGELOG.md).
 
 Since 0.3.0, large settled operational receipts use lossless compression. Current tools read legacy receipts; versions before 0.3.0 cannot decode the compressed format. Upgrade the tools used by all clients sharing a project's operation store together; a package rollback does not convert stored receipts. Project documents retain their existing identities and locations.
 

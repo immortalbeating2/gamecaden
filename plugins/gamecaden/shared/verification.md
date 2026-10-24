@@ -14,6 +14,10 @@ Ordinary quick fixes may connect requirements and checks in a brief explanation;
 
 Choose checks around failure modes: some requirements need static data; others need actual execution, natural input, target scale, or user judgment. Choose methods sufficient for this work's impacts; do not expand into an unrelated full audit because a tool is available, or reduce necessary coverage because of a quick label.
 
+Use focused checks during iteration. Schedule necessary costly combinations for shared impacts or a stable delivery candidate, or earlier to resolve a concrete current uncertainty.
+
+Before an expensive batch, calibrate a new or changed measurement method only where its validity is not established. Use a small real-consumer case with grounded expected results and a relevant failure case; inherit still-valid method checks.
+
 When a method produces repeated screenshots, decoded media, traces or frozen builds, arrange finite outputs and retained evidence under [Asset storage](asset-storage.md#bound-a-batch-without-capping-the-goal). Check configured limits against this method's required coverage and report any shortfall; a resource cap is not an acceptance result.
 
 The existence of required data/diagrams/frame slots supports only the corresponding material facts. To claim rules are active, visuals are reproduced, or actions are complete, check reading/wiring and corresponding observations along real consumers; after implementation or measurement changes, check whether this round's evidence covers the final baseline. Static checks that fulfill the original commitment remain valid; do not uniformly require all work to run the game for additional verification.
@@ -31,6 +35,8 @@ Check actually relevant conditions:
 Reuse depends on applicability, not mechanical judgments based on report age or file time. Session changes, unrelated document edits, or file changes that do not affect the conclusion require no full revalidation. When runtime environments/build artifacts change, results from the original environment may remain historical support but cannot prove corresponding behavior in the new environment.
 
 When a change affects one part, recheck that part and actual related surfaces, retaining other still-valid results. Partial results from different versions prove only their own objects; without version consistency or combination checks, they cannot be assembled into an overall current pass.
+
+Distinguish changes to the product, captured observations, and the logic judging those observations. A checker or report repair can reuse unchanged observations if they contain the required facts and retain valid bindings; rerun the affected judgment and its method checks. If capture missed the necessary event, timing, rendering, or scale, collect that missing coverage. Keep original failed or interrupted terminals intact and record any new conclusion separately.
 
 When evidence scope is unclear, first inspect original artifacts, commands, and actual conditions. Mark connections that cannot be established as unproven; changing report dates, titles, or result fields does not restore credibility.
 

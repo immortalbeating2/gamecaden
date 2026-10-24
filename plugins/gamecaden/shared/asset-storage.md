@@ -34,7 +34,7 @@ Track three different quantities:
 
 Estimate the next batch from existing same-route samples: planned output count times observed file size, plus necessary processing, captures, copies, and restoration costs. State uncertainty rather than inventing a success rate or universal retry allowance. Without measurements, produce a small batch of currently needed work and update the estimate from its results. Use real project constraints; an estimate is not a new approval gate or a fixed allowance for the complete asset goal.
 
-Give repeated capture, extraction, and build jobs finite output/termination conditions tied to their question and required coverage. Use the producer's supported count/byte/duration controls; add a missing bound in the responsible producer when that implementation is in scope. Record what was actually enforced. The workflow itself is not a disk monitor or generation quota service. Check batch totals at meaningful boundaries rather than repeatedly scanning the entire repository per image.
+Give repeated capture, extraction, and build jobs finite output/termination conditions tied to their question and required coverage. Use the producer's supported count/byte/duration controls; add a missing bound in the responsible producer when that implementation is in scope. Record what was actually enforced. A finite job does not bound accumulated history: apply the retention review below when a batch finishes or its uses change. The workflow itself is not a disk monitor or generation quota service. Check batch totals at meaningful boundaries rather than repeatedly scanning the entire repository per image.
 
 Reuse unchanged immutable dependencies by version/digest. Freeze a needed dependency version once and reference it across runs; a distinct reproduction may retain its own justified snapshot. Avoid new full payload copies merely to refresh a report. Protect immutable bytes from writes through shared links, and retain the native reader's path/link restrictions.
 
@@ -48,6 +48,8 @@ When requirements or production routes change, update the original plan and roll
 | A production/review batch reaches a clear conclusion | Reconcile current uses, pending comparisons, source/reproduction needs, and the batch's retained outputs |
 | A consumer/version is replaced, review ends, or a reproduction is resolved | Reassess the affected historical materials and their recovery dependencies, without a repository-wide sweep |
 
+Choose a disposition for affected outputs under the purposes below; reuse an adequate unchanged arrangement.
+
 Candidate registration or selection for one use **does not retire other candidates**. Pending comparison, acceptance, revision, and other uses can still depend on their bytes. A rejected attempt may contain useful source, hand work, or failure evidence; status or absence from runtime alone is not a deletion criterion.
 
 | Retained purpose | Treatment |
@@ -57,9 +59,11 @@ Candidate registration or selection for one use **does not retire other candidat
 | Unreferenced duplicates or consumed, demonstrably rebuildable intermediates | Deduplicate or reclaim within the adopted scope, protecting the retained source and its readers |
 | Explicitly discarded payloads with no remaining consumption, review, reuse, or required reproduction purpose | Retire under the adopted policy; retain sufficient identity, reason, conclusions, and representative grounds |
 
-For an actual move/deletion, check current references and undeclared recovery/backup dependencies as well as Git tracking. Bind the affected paths/versions and reasons in the existing batch record or tool inventory; a batch can share one rationale. Preserve unknown-purpose and unique required inputs until their disposition is resolved. Existing authorization may cover routine cleanup; selecting a candidate or closing a Task does not grant additional destructive scope.
+For an actual move/deletion, check current references and undeclared recovery/backup dependencies as well as Git tracking. Bind the affected paths/versions, disposition, reasons and restoration/rebuild grounds in the existing batch record or tool inventory; a batch can share one rationale. For unresolved uses, identify the specific consumer, review or recovery relationship to investigate, protecting unknown-purpose and unique required inputs until resolved. A generic possible future use is not a disposition. Existing authorization may cover routine cleanup; selecting a candidate or closing a Task does not grant additional destructive scope.
 
 Distinguish **online**, **archived and recoverable**, and **retired without guaranteed recovery** in the original retention explanation; these are payload availability facts, not new asset acceptance states or mandatory schema fields. Keep original reports, identities, and digests honest. If full historical media are retired, disclose the lost replay/closure coverage rather than claiming that an existing report preserves all pixels.
+
+Before expanding a sealed dependency closure, check what later readers actually require online and how historical payload retention can end. A historical reference alone does not require permanent online storage. Adjust active dependencies through a new effective version or supported writeback while preserving frozen historical reports, identities and digests. When changing availability, verify the real producer, verifier, registration and review paths against the retention/restore protocol; missing payloads must remain explicit failures or require restoration wherever their original bytes are needed. A retention note alone does not update those consumers.
 
 Native candidate bindings remain unchanged. Archive references aid navigation but are not an automatic native restore operation: restore needed original bytes at the supported binding, then revalidate. Historical unavailable-payload diagnostics do not become passes; current selection and actual integration still require their own files and checks under [asset handoff](asset-handoff.md#candidate-snapshots-and-legacy-recovery).
 

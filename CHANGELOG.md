@@ -2,6 +2,11 @@
 
 Windows physical I/O uses extended paths for deep operation-receipt writes, reads, and replay, retaining logical paths, scope, guards, and CAS. Packages include the full MIT license and retain third-party EPL notices. Earlier release notes below remain in their original Chinese wording.
 
+## v0.3.2 — 2026-10-25
+
+- Complete affected-batch retention decisions in existing records, including disposition, member scope and recovery/rebuild grounds. Separate active dependency updates from frozen historical reports, and match availability changes to actual readers and restore protocols without treating missing payloads as passes.
+- Order verification around changed paths and stable candidates, check new measurement methods before expensive expansion, and distinguish reusable observations from repaired judging logic. Clarify long-job preflight, support-tool preservation, resource contention and cancellation, and separate package upgrades from actual project application.
+
 ## v0.3.1 — 2026-10-20
 
 - Resolve located path reads and known panel record details without scanning unrelated collections, retaining workspace/file revisions, source boundaries, object identity, forwards and unfinished-write checks. ID-only lookup, full listings and numbering retain complete identity discovery.

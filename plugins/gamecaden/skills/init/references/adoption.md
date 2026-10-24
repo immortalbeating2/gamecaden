@@ -52,6 +52,8 @@ Modify confirmed invalid mappings or links, preserving unrelated conventions. Wh
 
 When repairing primary document responsibilities has been requested, organize affected documents under adopt and align original sources; ordinary continuation does not automatically become full-project repair because a new entrypoint is absent. Package updates do not independently migrate projects or change original fact owners.
 
+Report a package/binding update as such. Claim adoption of changed behavior only after checking affected project rules and tool entrypoints within the requested scope.
+
 <a id="migrate只移交获授权范围"></a>
 ## migrate: transfer only authorized scope
 

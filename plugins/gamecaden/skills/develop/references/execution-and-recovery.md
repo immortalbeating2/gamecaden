@@ -37,7 +37,11 @@ Preserve unrelated uncommitted changes and evidence. Revert only changes clearly
 <a id="中断和长作业"></a>
 ## Interruptions and long jobs
 
+Preflight prerequisites that could invalidate the next expensive job, reusing valid checks for unchanged inputs, paths and tools. Bind needed support-tool versions through the existing freezing or archive route. Method readiness follows [verification conventions](../../../shared/verification.md#1-first-establish-what-is-being-proven).
+
 Before submitting long jobs, waiting or switching context, save original Task goals, current results, existing tool-job/receipt references and next actions; cite original tool records for machine-job facts instead of copying another job-state database.
+
+Give concurrent jobs distinct output/log ownership. Isolate or serialize measurements when shared CPU/GPU contention could change the result. Apply suitable termination bounds and confirm cancelled jobs and their children have stopped before reusing their resources or outputs.
 
 On restoration, inspect actual jobs, outputs and records first. Command startup, placeholder files or quiet logs do not prove success. For external generation, migration or other potentially repeated effects, query completion/partial completion first; do not resubmit directly when results are unclear.
 

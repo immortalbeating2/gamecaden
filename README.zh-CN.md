@@ -2,9 +2,9 @@
 
 [English](README.md)
 
-维护与公开发行已统一到 [immortalbeating/gamecaden](https://github.com/immortalbeating/gamecaden)。当前版本为 **0.3.1**；已发布的标签与发行包保持原内容。原账号地址仅保留GitHub兼容跳转。
+维护与公开发行已统一到 [immortalbeating/gamecaden](https://github.com/immortalbeating/gamecaden)。当前版本为 **0.3.2**；已发布的标签与发行包保持原内容。原账号地址仅保留GitHub兼容跳转。
 
-0.3.1 修复定位读取与更新、原始命令日志识别、Windows 深路径探测及大量来源下的治理读取，减少面板重复扫描和历史回执重复解码。沿用 0.3.0 的资产存储、玩法数据与 UI 家族约定；八个职责、原有 Task 字段和 schema v1 保持不变，完整更新见[变更记录](CHANGELOG.md)。Codex、Claude 和完整通用包继续共用环境检查、独立依赖准备与调用入口。
+0.3.2 补齐批次留存处置与实际恢复读取、聚焦验证与原始观察复用、长任务预检与取消，以及包更新和项目采用的区分。沿用 0.3.1 的来源 I/O 与面板修复；八个职责、原有 Task 字段和 schema v1 保持不变，完整更新见[变更记录](CHANGELOG.md)。Codex、Claude 和完整通用包继续共用环境检查、独立依赖准备与调用入口。
 
 Gamecaden 是面向 Codex、Claude Code及兼容Skill宿主的游戏开发工作流：从已有目标和项目记录继续工作，把设计、实现、资产、验证和收尾接回真实来源。
 

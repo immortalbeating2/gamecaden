@@ -21,6 +21,28 @@ python scripts/check.py --suite distribution
 
 The entry point and `--help` define actual suites. Contract checks verify interfaces/file relationships; core regression checks I/O, governance, and panel models; distribution checks builds, integrity, installation, and recovery. Before release, run the complete suite and retain the environment, commands, actual results, and uncovered scope. Material-language behavior requires inspecting actual generated documents, including headings/labels, not only response language or tool exit codes.
 
+## v0.3.2 release validation
+
+On 2026-10-25, the final 0.3.2 source completed `python -B -X utf8 scripts/check.py --suite all` on Windows PowerShell with Python 3.14.5 and Node.js v24.16.0, exit 0. Core checks completed 200 cases with 199 passes and one unavailable file-symlink case skipped; distribution/runtime checks completed 45 cases with 44 passes and one unavailable file-symlink case skipped; all 17 JavaScript tests passed. Contracts, package inventory, license retention, deterministic builds, Windows junctions and extended-path checks passed. A separate CRLF-aware whitespace check passed.
+
+The three host manifests and source inventory use 0.3.2. The source and frozen release package contain 155 inventoried resources plus their manifest, with digest `8becfc981ba74dcfa0c1b79877fb25782789fe577032b26f9a9bfcb4ed2a36d7`; the release ZIP SHA-256 is `57882bce40ea9ff9b9dcef3b3da8e50b2681784d5aa65f33b0050be87dc6cb86`. Compared with v0.3.1, four existing instruction resources, the three host manifests and INSTALL.md changed; the other 147 resources, including all program and schema files, remain byte-identical.
+
+Independent read-only source review confirmed affected-batch dispositions, supported active-dependency updates, preservation of frozen reports and required-payload failures, bounded verification guidance, and no private-project disclosure in the public delta. This is source/package validation, without a measured runtime speed benefit or automatic adoption of project-specific cleanup. Remote CI, publication, native-host installation and local project bindings require their own readback results. The preparation observations below retain their original versions and scope.
+
+## Unreleased execution guidance — 2026-10-25
+
+Three existing instruction resources clarify verification scheduling and measurement readiness, reuse of unchanged observations after checker repairs, long-job preflight and cancellation, and package upgrades versus actual project application. No Task fields, schema, workflow states or package program code changed; the pending storage guidance remains included.
+
+On Windows, the prepared Python runtime completed `python -B -X utf8 scripts/check.py --suite core` with exit 0: 200 tests, 199 passes and one unavailable file-symlink case skipped. Contracts, source inventory and a CRLF-aware whitespace check passed. The source inventory retains 155 resources and version 0.3.1; this is an unpublished working change, not a replacement of the released package or installed copies.
+
+A separate read-only planning observation covered five anonymous cases: checker-only repair over bound observations, changed image pixels with reusable CPU evidence, an uncalibrated raster checker, an effective project gate, and a binding-only package update. Plans preserved failed terminals, required affected GPU checks, checked method discrimination, retained effective gates and distinguished upgrade gaps. These are scoped planning observations, without a baseline comparison, game execution or measured efficiency benefit. External project fixes, host adoption and release retain separate validation.
+
+Subsequent wording refinement removed duplicated project-gate reminders, limited calibration to unestablished measurement validity before expensive batches, made preflight reuse explicit and restricted adoption claims to the requested scope. Contract, inventory and whitespace checks passed; unchanged program code reuses the core results above. The five planning observations retain their preceding wording and were not repeated; no runtime speed improvement is claimed.
+
+## Unreleased storage guidance — 2026-10-24
+
+The storage contract clarifies accumulated batch retention and real reader/restore compatibility, with no new Task fields, ledgers, package program code or version change. `python -B -X utf8 scripts/check.py --suite core` completed on Windows with exit 0: 200 cases, 199 passes and one unavailable file-symlink case skipped. Contracts and source inventory passed. This is source validation, not a new release, host installation, model-behavior test or game run; the existing 0.3.1 release and installed packages retain their bytes.
+
 ## v0.3.1 release validation
 
 On 2026-10-20, the 0.3.1 release source completed `python -B -X utf8 scripts/check.py --suite all` on Windows PowerShell with Python 3.14.5 and Node.js v24.16.0, exit 0. Core checks completed 200 cases with 199 passes and one unavailable symbolic-link case skipped; distribution/runtime checks completed 45 cases with 44 passes and one unavailable file-symlink case skipped; all 17 JavaScript tests passed. Contracts, package inventory, license retention and deterministic package/ZIP rebuilds passed. Windows junction and extended-path cases ran successfully. A separate CRLF-aware whitespace check passed.

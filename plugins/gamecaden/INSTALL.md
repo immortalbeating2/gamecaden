@@ -1,7 +1,7 @@
 <a id="安装升级与回滚"></a>
 # Installation, Upgrades, and Rollback
 
-This is Gamecaden 0.3.1, repairing source I/O, deep-path probes, large-source panel/governance reads and repeated settled-receipt decoding. It retains asset storage/retention, gameplay-data and UI family conventions, scoped continuation, and the unified tool-environment entry point. First-party code and documentation are provided under [MIT](LICENSE); see [notices](THIRD_PARTY_NOTICES.md) for third-party licenses. The plugin provides eight responsibilities: flow / init / brainstorm / design / develop / assets / verify / close. The standalone Skill reads these through the package-root [gamecaden entry point](SKILL.md). Read actual names back from the host. Workflow records retain adopted projects' own locations, defaulting to `game-workflow/`, schema v1.
+This is Gamecaden 0.3.2, clarifying retention dispositions, real restore paths, focused verification and long-job handling without program-interface or schema changes. It retains source I/O and panel fixes, gameplay-data and UI family conventions, scoped continuation, and the unified tool-environment entry point. First-party code and documentation are provided under [MIT](LICENSE); see [notices](THIRD_PARTY_NOTICES.md) for third-party licenses. The plugin provides eight responsibilities: flow / init / brainstorm / design / develop / assets / verify / close. The standalone Skill reads these through the package-root [gamecaden entry point](SKILL.md). Read actual names back from the host. Workflow records retain adopted projects' own locations, defaulting to `game-workflow/`, schema v1.
 
 Upgrade tools used by all clients sharing a project's operation store together. Current tools read legacy receipts and may write losslessly compressed large settled receipts; versions before 0.3.0 cannot read that format. Package rollback does not convert stored receipts. Project documents retain their existing identities and locations.
 
@@ -17,7 +17,7 @@ codex plugin add "gamecaden@gamecaden" --json
 
 Ordinary installation tracks the repository's default main branch. To update, run `codex plugin marketplace upgrade gamecaden`, then `codex plugin add gamecaden@gamecaden --json`; no new version number is needed, and this does not mean background automatic updates.
 
-Optionally use `--ref v0.3.1` to pin a version; updates to a pinned tag still read that tag. To switch an existing pinned source to the default branch, explicitly remove the old gamecaden marketplace registration before adding it with the commands above; handle other local trial sources separately. See [public installation instructions](https://github.com/immortalbeating/gamecaden/blob/main/docs/installation.md) for complete steps.
+Optionally use `--ref v0.3.2` to pin a version; updates to a pinned tag still read that tag. To switch an existing pinned source to the default branch, explicitly remove the old gamecaden marketplace registration before adding it with the commands above; handle other local trial sources separately. See [public installation instructions](https://github.com/immortalbeating/gamecaden/blob/main/docs/installation.md) for complete steps.
 
 <a id="claude-code插件"></a>
 ## Claude Code Plugin
